@@ -108,7 +108,7 @@ class MovieDetail extends Component {
         const api_key = "7bc0fc527fe27e156c545475445ff39e";
 		axios({
             method : "GET",
-            url : `http://api.themoviedb.org/3/movie/${id}?api_key=${api_key}`
+            url : `https://api.themoviedb.org/3/movie/${id}?api_key=${api_key}`
         })
         .then((response) => {
             this.setState({

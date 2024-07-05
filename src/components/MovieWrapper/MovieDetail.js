@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col, Glyphicon, Image } from "react-bootstrap";
 import styled from "styled-components";
 import axios from "axios";
-import API_KEY from "../../API";
+//import API_KEY from "../../API";
 import poster_img from "../../static/img/poster.png";
 import fetchingImage from "../../static/img/loading.gif";
 import { withRouter } from 'react-router-dom';
@@ -104,7 +104,8 @@ class MovieDetail extends Component {
 
 
     fetchData(id) {
-        const api_key = API_KEY;
+        //const api_key = API_KEY;
+        const api_key = "7bc0fc527fe27e156c545475445ff39e";
 		axios({
             method : "GET",
             url : `http://api.themoviedb.org/3/movie/${id}?api_key=${api_key}`

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MovieItem from "./MovieItem";
 import axios from "axios";
-import API_KEY from "../../API";
+//import API_KEY from "../../API";
 
 export default class MovieLists extends Component {
 	constructor(props) {
@@ -11,7 +11,8 @@ export default class MovieLists extends Component {
 		}
 	}
 	componentWillMount() {
-		const api_key = API_KEY;
+		//const api_key = API_KEY;
+		const api_key = "7bc0fc527fe27e156c545475445ff39e";
 		const language = "en-US" ;
 		const sort_by = "popularity.desc";
 

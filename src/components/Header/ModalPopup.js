@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavItem, Modal, FormControl, Row, Col, Image, Glyphicon, Nav  } from "react-bootstrap";
 import { findDOMNode } from "react-dom";
 import axios from "axios";
-import API_KEY from "../../API";
+//import API_KEY from "../../API";
 import styled from "styled-components";
 import { withRouter } from "react-router-dom"
 
@@ -39,7 +39,7 @@ class ModalPopup extends Component {
 
 	handleInputChange(evt) {
 		const searchVal = findDOMNode(this.searchField).value;
-		const api_key = API_KEY;
+		const api_key = "7bc0fc527fe27e156c545475445ff39e";
 		const query = searchVal;
 		axios.get(`https://api.themoviedb.org/3/search/movie?page=1&api_key=${api_key}&query=${query}`)
 		.then(response => {
